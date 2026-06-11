@@ -2484,45 +2484,50 @@ w7: {
       <!-- Static reference lines (always visible) -->
       <div style="margin-bottom:10px">
         <div style="font-weight:700;font-size:.82rem;color:var(--fg2);margin-bottom:8px;text-transform:uppercase;letter-spacing:.05em">📖 The Three Number Lines</div>
-        <svg viewBox="0 0 320 180" width="100%" style="display:block;max-width:360px;margin:0 auto;overflow:visible">
-          <!-- pH line -->
-          <text x="0" y="22" fill="#c9d1e0" font-size="13" font-weight="700">pH</text>
-          <text x="60" y="14" fill="#ff3864" font-size="11" font-weight="800">A</text>
-          <text x="248" y="14" fill="#6b9fff" font-size="11" font-weight="800">B</text>
-          <line x1="60" y1="22" x2="260" y2="22" stroke="#c9d1e0" stroke-width="2.5"/>
-          <circle cx="60" cy="22" r="5" fill="#ff3864"/>
-          <circle cx="260" cy="22" r="5" fill="#6b9fff"/>
-          <text x="53" y="36" fill="#ff3864" font-size="10">7.35</text>
-          <text x="248" y="36" fill="#6b9fff" font-size="10">7.45</text>
-          <!-- midpoint tick -->
-          <line x1="160" y1="17" x2="160" y2="27" stroke="#555" stroke-width="1"/>
-          <text x="153" y="36" fill="#888" font-size="9">7.40</text>
+        <svg viewBox="0 0 340 240" width="100%" style="display:block;margin:0 auto;overflow:visible">
+          <!-- ── pH line ── -->
+          <!-- label row -->
+          <text x="10" y="18" fill="#c9d1e0" font-size="15" font-weight="800">pH</text>
+          <text x="80" y="18" fill="#ff3864" font-size="13" font-weight="800">A — Acidosis</text>
+          <text x="240" y="18" fill="#6b9fff" font-size="13" font-weight="800" text-anchor="end">Alkalosis — B</text>
+          <!-- line -->
+          <line x1="80" y1="32" x2="320" y2="32" stroke="#c9d1e0" stroke-width="3"/>
+          <circle cx="80" cy="32" r="6" fill="#ff3864"/>
+          <circle cx="320" cy="32" r="6" fill="#6b9fff"/>
+          <!-- ticks + values -->
+          <line x1="200" y1="26" x2="200" y2="38" stroke="#555" stroke-width="1.5"/>
+          <text x="73" y="50" fill="#ff3864" font-size="12" font-weight="700">7.35</text>
+          <text x="192" y="50" fill="#888" font-size="11">7.40</text>
+          <text x="307" y="50" fill="#6b9fff" font-size="12" font-weight="700">7.45</text>
 
-          <!-- CO2 line (LUNGS) -->
-          <text x="0" y="78" fill="#e040fb" font-size="10" font-weight="700">Lungs</text>
-          <text x="56" y="65" fill="#6b9fff" font-size="11" font-weight="800">B</text>
-          <text x="248" y="65" fill="#ff3864" font-size="11" font-weight="800">A</text>
-          <text x="40" y="78" fill="#e040fb" font-size="13" font-weight="700">PaCO₂</text>
-          <line x1="60" y1="78" x2="260" y2="78" stroke="#e040fb" stroke-width="2.5"/>
-          <circle cx="60" cy="78" r="5" fill="#6b9fff"/>
-          <circle cx="260" cy="78" r="5" fill="#ff3864"/>
-          <text x="57" y="92" fill="#6b9fff" font-size="10">35</text>
-          <text x="252" y="92" fill="#ff3864" font-size="10">45</text>
-          <line x1="160" y1="73" x2="160" y2="83" stroke="#555" stroke-width="1"/>
-          <text x="155" y="92" fill="#888" font-size="9">40</text>
+          <!-- ── CO₂ line (LUNGS) ── -->
+          <text x="10" y="90" fill="#e040fb" font-size="13" font-weight="800">Lungs</text>
+          <text x="10" y="107" fill="#e040fb" font-size="15" font-weight="800">PaCO₂</text>
+          <text x="80" y="90" fill="#6b9fff" font-size="13" font-weight="800">B — Base (low CO₂)</text>
+          <text x="240" y="90" fill="#ff3864" font-size="13" font-weight="800" text-anchor="end">Acid (high) — A</text>
+          <line x1="80" y1="115" x2="320" y2="115" stroke="#e040fb" stroke-width="3"/>
+          <circle cx="80" cy="115" r="6" fill="#6b9fff"/>
+          <circle cx="320" cy="115" r="6" fill="#ff3864"/>
+          <line x1="200" y1="109" x2="200" y2="121" stroke="#555" stroke-width="1.5"/>
+          <text x="77" y="133" fill="#6b9fff" font-size="12" font-weight="700">35</text>
+          <text x="196" y="133" fill="#888" font-size="11">40</text>
+          <text x="313" y="133" fill="#ff3864" font-size="12" font-weight="700">45</text>
+          <!-- FLIPPED badge -->
+          <rect x="148" y="138" width="64" height="16" rx="8" fill="rgba(255,56,100,.15)" stroke="#ff3864" stroke-width="1"/>
+          <text x="180" y="150" fill="#ff3864" font-size="10" font-weight="800" text-anchor="middle">⚠ FLIPPED</text>
 
-          <!-- HCO3 line (KIDNEYS) -->
-          <text x="0" y="138" fill="#ff6eb0" font-size="10" font-weight="700">Kidneys</text>
-          <text x="56" y="122" fill="#ff3864" font-size="11" font-weight="800">A</text>
-          <text x="248" y="122" fill="#6b9fff" font-size="11" font-weight="800">B</text>
-          <text x="40" y="138" fill="#39ff14" font-size="13" font-weight="700">HCO₃</text>
-          <line x1="60" y1="138" x2="260" y2="138" stroke="#39ff14" stroke-width="2.5"/>
-          <circle cx="60" cy="138" r="5" fill="#ff3864"/>
-          <circle cx="260" cy="138" r="5" fill="#6b9fff"/>
-          <text x="57" y="152" fill="#ff3864" font-size="10">22</text>
-          <text x="252" y="152" fill="#6b9fff" font-size="10">26</text>
-          <line x1="160" y1="133" x2="160" y2="143" stroke="#555" stroke-width="1"/>
-          <text x="155" y="152" fill="#888" font-size="9">24</text>
+          <!-- ── HCO₃ line (KIDNEYS) ── -->
+          <text x="10" y="185" fill="#ff6eb0" font-size="13" font-weight="800">Kidneys</text>
+          <text x="10" y="202" fill="#39ff14" font-size="15" font-weight="800">HCO₃</text>
+          <text x="80" y="185" fill="#ff3864" font-size="13" font-weight="800">A — Acidosis</text>
+          <text x="240" y="185" fill="#6b9fff" font-size="13" font-weight="800" text-anchor="end">Alkalosis — B</text>
+          <line x1="80" y1="210" x2="320" y2="210" stroke="#39ff14" stroke-width="3"/>
+          <circle cx="80" cy="210" r="6" fill="#ff3864"/>
+          <circle cx="320" cy="210" r="6" fill="#6b9fff"/>
+          <line x1="200" y1="204" x2="200" y2="216" stroke="#555" stroke-width="1.5"/>
+          <text x="77" y="228" fill="#ff3864" font-size="12" font-weight="700">22</text>
+          <text x="196" y="228" fill="#888" font-size="11">24</text>
+          <text x="313" y="228" fill="#6b9fff" font-size="12" font-weight="700">26</text>
         </svg>
         <div style="font-size:.78rem;color:var(--dim);text-align:center;margin-top:4px">Notice: CO₂ is FLIPPED — high CO₂ = acidosis (A on right)</div>
       </div>
@@ -2571,8 +2576,8 @@ w7: {
         }
 
         // Draw the number lines with markers
-        function lineX(val,min,max,w=200){ return 60+((val-min)/(max-min))*w; }
-        function clampX(x){return Math.min(260,Math.max(60,x));}
+        function lineX(val,min,max,w=240){ return 80+((val-min)/(max-min))*w; }
+        function clampX(x){return Math.min(320,Math.max(80,x));}
         const phX=clampX(lineX(ph,7.30,7.50));
         const co2X=clampX(lineX(co2,30,50)); // note: CO2 line is flipped visually
         const hco3X=clampX(lineX(hco3,18,30));
@@ -2582,44 +2587,55 @@ w7: {
         const co2Col=co2>45?'#ff3864':co2<35?'#6b9fff':'#39ff14'; // high CO2=acid
         const hco3Col=markerCol(hco3,22,26);
 
-        lines.innerHTML=\`<svg viewBox="0 0 320 180" width="100%" style="display:block;max-width:360px;margin:0 auto;overflow:visible">
-          <text x="0" y="22" fill="#c9d1e0" font-size="13" font-weight="700">pH</text>
-          <text x="60" y="14" fill="#ff3864" font-size="11" font-weight="800">A</text>
-          <text x="248" y="14" fill="#6b9fff" font-size="11" font-weight="800">B</text>
-          <line x1="60" y1="22" x2="260" y2="22" stroke="#444" stroke-width="2.5"/>
-          <circle cx="60" cy="22" r="4" fill="#ff3864" opacity=".4"/>
-          <circle cx="260" cy="22" r="4" fill="#6b9fff" opacity=".4"/>
-          <rect x="110" y="17" width="100" height="10" rx="5" fill="rgba(57,255,20,.1)" stroke="rgba(57,255,20,.3)" stroke-width="1"/>
-          <text x="53" y="36" fill="#ff3864" font-size="10">7.35</text>
-          <text x="248" y="36" fill="#6b9fff" font-size="10">7.45</text>
-          <circle cx="\${phX}" cy="22" r="7" fill="\${phCol}" opacity=".9"/>
-          <text x="\${phX}" y="46" text-anchor="middle" fill="\${phCol}" font-size="9" font-weight="800">\${ph}</text>
+        lines.innerHTML=\`<svg viewBox="0 0 340 255" width="100%" style="display:block;margin:0 auto;overflow:visible">
+          <!-- pH line -->
+          <text x="10" y="18" fill="#c9d1e0" font-size="15" font-weight="800">pH</text>
+          <text x="80" y="18" fill="#ff3864" font-size="12" font-weight="800">A — Acidosis</text>
+          <text x="320" y="18" fill="#6b9fff" font-size="12" font-weight="800" text-anchor="end">Alkalosis — B</text>
+          <line x1="80" y1="30" x2="320" y2="30" stroke="#444" stroke-width="3"/>
+          <circle cx="80" cy="30" r="5" fill="#ff3864" opacity=".35"/>
+          <circle cx="320" cy="30" r="5" fill="#6b9fff" opacity=".35"/>
+          <rect x="140" y="24" width="80" height="12" rx="6" fill="rgba(57,255,20,.1)" stroke="rgba(57,255,20,.3)" stroke-width="1"/>
+          <line x1="200" y1="24" x2="200" y2="36" stroke="#555" stroke-width="1.5"/>
+          <text x="73" y="48" fill="#ff3864" font-size="12" font-weight="700">7.35</text>
+          <text x="192" y="48" fill="#888" font-size="11">7.40</text>
+          <text x="308" y="48" fill="#6b9fff" font-size="12" font-weight="700">7.45</text>
+          <circle cx="\${phX}" cy="30" r="8" fill="\${phCol}" opacity=".95"/>
+          <text x="\${phX}" y="62" text-anchor="middle" fill="\${phCol}" font-size="11" font-weight="900">\${ph}</text>
 
-          <text x="0" y="82" fill="#e040fb" font-size="10" font-weight="700">Lungs</text>
-          <text x="56" y="68" fill="#6b9fff" font-size="11" font-weight="800">B</text>
-          <text x="248" y="68" fill="#ff3864" font-size="11" font-weight="800">A</text>
-          <text x="40" y="82" fill="#e040fb" font-size="13" font-weight="700">CO₂</text>
-          <line x1="60" y1="82" x2="260" y2="82" stroke="#444" stroke-width="2.5"/>
-          <circle cx="60" cy="82" r="4" fill="#6b9fff" opacity=".4"/>
-          <circle cx="260" cy="82" r="4" fill="#ff3864" opacity=".4"/>
-          <rect x="110" y="77" width="100" height="10" rx="5" fill="rgba(57,255,20,.1)" stroke="rgba(57,255,20,.3)" stroke-width="1"/>
-          <text x="57" y="96" fill="#6b9fff" font-size="10">35</text>
-          <text x="252" y="96" fill="#ff3864" font-size="10">45</text>
-          <circle cx="\${co2X}" cy="82" r="7" fill="\${co2Col}" opacity=".9"/>
-          <text x="\${co2X}" y="106" text-anchor="middle" fill="\${co2Col}" font-size="9" font-weight="800">\${co2}</text>
+          <!-- CO2 line -->
+          <text x="10" y="95" fill="#e040fb" font-size="12" font-weight="800">Lungs</text>
+          <text x="10" y="112" fill="#e040fb" font-size="15" font-weight="800">PaCO₂</text>
+          <text x="80" y="95" fill="#6b9fff" font-size="12" font-weight="800">B — Base (low)</text>
+          <text x="320" y="95" fill="#ff3864" font-size="12" font-weight="800" text-anchor="end">Acid (high) — A</text>
+          <line x1="80" y1="120" x2="320" y2="120" stroke="#444" stroke-width="3"/>
+          <circle cx="80" cy="120" r="5" fill="#6b9fff" opacity=".35"/>
+          <circle cx="320" cy="120" r="5" fill="#ff3864" opacity=".35"/>
+          <rect x="140" y="114" width="80" height="12" rx="6" fill="rgba(57,255,20,.1)" stroke="rgba(57,255,20,.3)" stroke-width="1"/>
+          <line x1="200" y1="114" x2="200" y2="126" stroke="#555" stroke-width="1.5"/>
+          <text x="77" y="138" fill="#6b9fff" font-size="12" font-weight="700">35</text>
+          <text x="196" y="138" fill="#888" font-size="11">40</text>
+          <text x="313" y="138" fill="#ff3864" font-size="12" font-weight="700">45</text>
+          <rect x="152" y="143" width="56" height="15" rx="7" fill="rgba(255,56,100,.15)" stroke="#ff3864" stroke-width="1"/>
+          <text x="180" y="154" fill="#ff3864" font-size="10" font-weight="800" text-anchor="middle">⚠ FLIPPED</text>
+          <circle cx="\${co2X}" cy="120" r="8" fill="\${co2Col}" opacity=".95"/>
+          <text x="\${co2X}" y="168" text-anchor="middle" fill="\${co2Col}" font-size="11" font-weight="900">\${co2}</text>
 
-          <text x="0" y="142" fill="#ff6eb0" font-size="10" font-weight="700">Kidneys</text>
-          <text x="56" y="128" fill="#ff3864" font-size="11" font-weight="800">A</text>
-          <text x="248" y="128" fill="#6b9fff" font-size="11" font-weight="800">B</text>
-          <text x="40" y="142" fill="#39ff14" font-size="13" font-weight="700">HCO₃</text>
-          <line x1="60" y1="142" x2="260" y2="142" stroke="#444" stroke-width="2.5"/>
-          <circle cx="60" cy="142" r="4" fill="#ff3864" opacity=".4"/>
-          <circle cx="260" cy="142" r="4" fill="#6b9fff" opacity=".4"/>
-          <rect x="110" y="137" width="100" height="10" rx="5" fill="rgba(57,255,20,.1)" stroke="rgba(57,255,20,.3)" stroke-width="1"/>
-          <text x="57" y="156" fill="#ff3864" font-size="10">22</text>
-          <text x="252" y="156" fill="#6b9fff" font-size="10">26</text>
-          <circle cx="\${hco3X}" cy="142" r="7" fill="\${hco3Col}" opacity=".9"/>
-          <text x="\${hco3X}" y="166" text-anchor="middle" fill="\${hco3Col}" font-size="9" font-weight="800">\${hco3}</text>
+          <!-- HCO3 line -->
+          <text x="10" y="195" fill="#ff6eb0" font-size="12" font-weight="800">Kidneys</text>
+          <text x="10" y="212" fill="#39ff14" font-size="15" font-weight="800">HCO₃</text>
+          <text x="80" y="195" fill="#ff3864" font-size="12" font-weight="800">A — Acidosis</text>
+          <text x="320" y="195" fill="#6b9fff" font-size="12" font-weight="800" text-anchor="end">Alkalosis — B</text>
+          <line x1="80" y1="220" x2="320" y2="220" stroke="#444" stroke-width="3"/>
+          <circle cx="80" cy="220" r="5" fill="#ff3864" opacity=".35"/>
+          <circle cx="320" cy="220" r="5" fill="#6b9fff" opacity=".35"/>
+          <rect x="140" y="214" width="80" height="12" rx="6" fill="rgba(57,255,20,.1)" stroke="rgba(57,255,20,.3)" stroke-width="1"/>
+          <line x1="200" y1="214" x2="200" y2="226" stroke="#555" stroke-width="1.5"/>
+          <text x="77" y="238" fill="#ff3864" font-size="12" font-weight="700">22</text>
+          <text x="196" y="238" fill="#888" font-size="11">24</text>
+          <text x="313" y="238" fill="#6b9fff" font-size="12" font-weight="700">26</text>
+          <circle cx="\${hco3X}" cy="220" r="8" fill="\${hco3Col}" opacity=".95"/>
+          <text x="\${hco3X}" y="252" text-anchor="middle" fill="\${hco3Col}" font-size="11" font-weight="900">\${hco3}</text>
         </svg>\`;
 
         const fullLabel=comp?\`\${disorder} · \${comp}\`:disorder;
